@@ -3,12 +3,26 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        TwoDemencialMatrix testTwoMatrix1 = new TwoDemencialMatrix();
+/*        TwoDemencialMatrix testTwoMatrix1 = new TwoDemencialMatrix();
         testTwoMatrix1.printMatrix();
         System.out.println("__________________");
-        TwoDemencialMatrix testTwoMatrix2 = new TwoDemencialMatrix(4,6);
+        TwoDemencialMatrix testTwoMatrix2 = new TwoDemencialMatrix(2,2);
         testTwoMatrix2.printMatrix();
-        System.out.printf("Max: %d Min: %d", testTwoMatrix2.max(), testTwoMatrix2.min());
+        System.out.printf("Max: %d Min: %d \r\n", testTwoMatrix2.max(), testTwoMatrix2.min());
+        System.out.println("__________________");*/
+        //TwoDimMatrixWithZeroSum testZeroMatrix = new TwoDimMatrixWithZeroSum(4, 4);
+        TwoDimMatrixWithZeroSum testZeroMatrix = new TwoDimMatrixWithZeroSum();
+        testZeroMatrix.printMatrix();
+/*        try{
+            Field field=testZeroMatrix.getClass().getDeclaredField("nameMassive");
+            field.setAccessible(true);
+            System.out.println(field.get(testZeroMatrix));
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }*/
+
 
         /*OneDemencialMatrix testMatrix1= new OneDemencialMatrix();
         testMatrix1.printMatrix();
