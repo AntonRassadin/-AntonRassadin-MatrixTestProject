@@ -3,14 +3,16 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        TwoDemencialMatrix testTwoMatrix1 = new TwoDemencialMatrix();
+        TwoDemencialMatrix testTwoMatrix1 = new TwoDemencialMatrix(4,4);
         testTwoMatrix1.printMatrix();
         System.out.println("__________________");
-        ArrayList<Integer> list = new ArrayList<Integer>();
-        System.out.println("__________________");
+        testTwoMatrix1.addCrossOfZero();
+        testTwoMatrix1.printMatrix();
+/*
         TwoDemencialMatrix test2 = new TwoDemencialMatrix(5);
         list.addAll(test2.toListSnake());
         list.forEach(System.out::println);
+*/
 
 
 

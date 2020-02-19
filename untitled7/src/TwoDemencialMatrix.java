@@ -40,8 +40,9 @@ public class TwoDemencialMatrix implements MatrixInterface {
     public void printMatrix(){
         for(int[] i : array){
             for(int j : i) {
-                System.out.println(j);
+                System.out.printf("%2d", j);
             }
+            System.out.println();
         }
     }
 
@@ -77,6 +78,41 @@ public class TwoDemencialMatrix implements MatrixInterface {
         }
 
         return intList;
+    }
+
+    public void addCrossOfZero(){
+        if(amountFirstDim%2==1){
+            int firstDimStep = (amountFirstDim-1)/2;
+            insertHorizontalLine(firstDimStep);
+        }else{
+            int firstDimStep = amountFirstDim/2-1;
+            insertHorizontalLine(firstDimStep);
+        }
+        if(amountSecondDim%2==1){
+            int firstDimStep = (amountFirstDim-1)/2;
+            insertVerticalLine(firstDimStep);
+        }else{
+            int firstDimStep = amountSecondDim/2-1;
+            insertVerticalLine(firstDimStep);
+        }
+
+
+    }
+
+    private void insertVerticalLine(int firstDimStep) {
+        for (int i = 0; i < amountSecondDim; i++) {
+            for (int j = firstDimStep; j < amountFirstDim - firstDimStep; j++) {
+                array[j][i] = 0;
+            }
+        }
+    }
+
+    private void insertHorizontalLine(int firstDimStep) {
+        for (int i = 0; i < amountSecondDim; i++) {
+            for (int j = firstDimStep; j < amountFirstDim - firstDimStep; j++) {
+                array[i][j] = 0;
+            }
+        }
     }
 
     protected void printName(){
