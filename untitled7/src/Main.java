@@ -3,25 +3,17 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-/*        TwoDemencialMatrix testTwoMatrix1 = new TwoDemencialMatrix();
+        TwoDemencialMatrix testTwoMatrix1 = new TwoDemencialMatrix(4,4);
         testTwoMatrix1.printMatrix();
         System.out.println("__________________");
-        TwoDemencialMatrix testTwoMatrix2 = new TwoDemencialMatrix(2,2);
-        testTwoMatrix2.printMatrix();
-        System.out.printf("Max: %d Min: %d \r\n", testTwoMatrix2.max(), testTwoMatrix2.min());
-        System.out.println("__________________");*/
-        //TwoDimMatrixWithZeroSum testZeroMatrix = new TwoDimMatrixWithZeroSum(4, 4);
-        TwoDimMatrixWithZeroSum testZeroMatrix = new TwoDimMatrixWithZeroSum();
-        testZeroMatrix.printMatrix();
-/*        try{
-            Field field=testZeroMatrix.getClass().getDeclaredField("nameMassive");
-            field.setAccessible(true);
-            System.out.println(field.get(testZeroMatrix));
-        } catch (NoSuchFieldException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        }*/
+        testTwoMatrix1.addCrossOfZero();
+        testTwoMatrix1.printMatrix();
+/*
+        TwoDemencialMatrix test2 = new TwoDemencialMatrix(5);
+        list.addAll(test2.toListSnake());
+        list.forEach(System.out::println);
+*/
+
 
 
         /*OneDemencialMatrix testMatrix1= new OneDemencialMatrix();
